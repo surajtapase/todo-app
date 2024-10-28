@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #f9fafb; /* Light background */
+    --foreground: #111827; /* Dark foreground for better contrast */
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #1f2937; /* Dark background for dark mode */
+        --foreground: #e5e7eb; /* Light foreground for dark mode */
+    }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Styles for react-modal */
+.modal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
