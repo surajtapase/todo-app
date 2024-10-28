@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "todo-frontend",
   "version": "0.1.0",
   "private": true,
@@ -23,5 +24,22 @@
     "eslint-config-next": "^15.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
+=======
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+>>>>>>> cf1d656cc4cf4d4e9eb378e83395724440a1afa8
   }
 }
